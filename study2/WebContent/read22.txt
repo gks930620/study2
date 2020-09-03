@@ -1,0 +1,11 @@
+# read22.txt
+
+--IMemberService, IMemberDao 활용해서 변경
+mem_job, mem_like가 코드로 보이는 것 해결
+memberView
+memberEdit
+memberModify
+ - MemberDaoOracle - updateMember를 구현
+memberForm
+-- 과제
+memberRegist

@@ -1,0 +1,40 @@
+# read27.txt
+
+디버거 사용
+---------------------------
+어플리케이션에서 문제가 발생했을때
+ - 개발중 : 로그남기기
+ 
+ 
+ - 운영중 : 로그남기기
+ 
+ 
+ 로그남기기
+  System.out.println() : 좋은 방법은 아님. 단순하게 처리하는 경우
+  						 콘솔에 로그가 사라짐
+  운영중일때는 log를 처리하는 라이브러리로 작성
+  CommonLoggin ( java에서 대표적인 로그 퍼사드 객체, 대행자 )
+  				 실제 로그 구현체 Log4j, LogBack, JDK logger, ...) 
+  				 
+  구글 이클립스 디버거 사용법
+  https://spoqa.github.io/2012/03/05/eclipse-debugger.html
+  
+  DBMS별 페이징 쿼리
+  mySQL(maria) : select 구문의 마지막 절에 LIMIT절
+  limit 0 : 첫로우
+  limit 0, 10 : 첫 로우에서 10개
+  limit 10, 10 : 11번째 로우에서 10개
+  
+  oracle : rownum
+  
+  표준 윈도우함수 지원 DBMS : oracle, sqlserver, db2, ...
+  
+  study2 마지막 과제
+  회원목록을 자유게시판에서 했던것처럼 페이징처리
+  freeList에서 했던 검색
+  com.study.member.vo.MemberSearchVO -> PagingVO
+   - searchJob, searchLike,
+   - searchType : NM, ID, HP, ADDR (회원명, 아이디, 핸드폰, 주소)
+   - searchWord
+  
+  
